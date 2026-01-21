@@ -1,6 +1,6 @@
 --- a/kernel/Kconfig.hz
 +++ b/kernel/Kconfig.hz
-@@ -40,6 +40,15 @@
+@@ -40,6 +40,21 @@
  	config HZ_300
  		bool "300 HZ"
    
@@ -22,7 +22,7 @@
  	config HZ_1000
  		bool "1000 HZ"
  
-@@ -51,6 +60,9 @@
+@@ -51,6 +66,11 @@
  	default 100 if HZ_100
  	default 250 if HZ_250
  	default 300 if HZ_300
